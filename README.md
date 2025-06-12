@@ -22,9 +22,134 @@
 └─────────────────────────────────────────┘
 ```
 
+# Runtime Roadmap
+
+## Progress Overview
+- [x] Basic runtime building (~20% complete)
+- [x] NitroJIT ARM64 emitter (currently emits x64 assembly)
+- [x] Meteora component (working by default)
+
+## Remaining Components (~80% of work)
+
+### 1. Asset Monitor
+- [ ] **File watching system**
+  - [ ] Implement file system monitoring
+  - [ ] Change detection algorithms
+  - [ ] Asset reloading pipeline
+- [ ] **Hot-reload functionality**
+  - [ ] Script change detection
+  - [ ] Module recompilation triggers
+  - [ ] State preservation during reload
+- [ ] **Files to implement**: `*asset*`, `*monitor*`, `*watch*`
+
+### 2. Abstraction OS Layer
+- [ ] **Platform detection**
+  - [ ] macOS ARM64 support
+  - [ ] macOS x64 support
+  - [ ] Windows x64 support
+  - [ ] Linux x64 support
+- [ ] **OS-specific APIs**
+  - [ ] File system operations
+  - [ ] Threading primitives
+  - [ ] Memory management
+  - [ ] Process management
+- [ ] **Native API wrapping**
+  - [ ] System calls abstraction
+  - [ ] Platform-specific optimizations
+
+### 3. Interpreter
+- [ ] **Core interpreter engine**
+  - [ ] AST walking implementation
+  - [ ] Runtime execution engine
+  - [ ] Variable management system
+- [ ] **C++ language support**
+  - [ ] Expression evaluation
+  - [ ] Function call handling
+  - [ ] Object lifecycle management
+- [ ] **Integration with runtime**
+  - [ ] Godot API binding
+  - [ ] Memory safety guarantees
+  - [ ] Error handling and debugging
+
+### 4. Compiler Interface
+- [ ] **Compiler integration**
+  - [ ] Clang integration
+  - [ ] GCC integration
+  - [ ] MSVC integration (Windows)
+- [ ] **Compilation pipeline**
+  - [ ] Compiler invocation system
+  - [ ] Build flag management
+  - [ ] Optimization settings
+- [ ] **C++ script compilation**
+  - [ ] Source to object file
+  - [ ] Dynamic library generation
+  - [ ] Symbol export management
+
+### 5. Metadata Parser
+- [ ] **C++ code analysis**
+  - [ ] AST parsing implementation
+  - [ ] Class structure extraction
+  - [ ] Method signature parsing
+  - [ ] Property detection
+- [ ] **Reflection data generation**
+  - [ ] Type information generation
+  - [ ] Method binding metadata
+  - [ ] Property binding metadata
+- [ ] **Godot integration**
+  - [ ] Editor support data
+  - [ ] Runtime type information
+  - [ ] Documentation extraction
+
+### 6. Module Wrapper
+- [ ] **GDExtension interface**
+  - [ ] Method binding system
+  - [ ] Property exposure
+  - [ ] Signal handling
+- [ ] **Godot integration**
+  - [ ] Node class wrapping
+  - [ ] Resource class wrapping
+  - [ ] Custom type registration
+- [ ] **Runtime binding**
+  - [ ] Dynamic method resolution
+  - [ ] Type conversion system
+  - [ ] Error propagation
+
+### 7. Module Loader
+- [ ] **Dynamic library management**
+  - [ ] Library loading system
+  - [ ] Symbol resolution
+  - [ ] Dependency management
+- [ ] **Hot-reload support**
+  - [ ] Safe module unloading
+  - [ ] State migration
+  - [ ] Reference updating
+- [ ] **Runtime management**
+  - [ ] Module lifecycle
+  - [ ] Memory cleanup
+  - [ ] Error recovery
+
+## Implementation Priority
+
+### Phase 1: Core Infrastructure (Weeks 1-4)
+- [ ] Abstraction OS Layer
+- [ ] Metadata Parser
+
+### Phase 2: Compilation Pipeline (Weeks 5-8)
+- [ ] Compiler Interface
+- [ ] Module Wrapper
+
+### Phase 3: Runtime & Development (Weeks 9-12)
+- [ ] Interpreter
+- [ ] Module Loader
+- [ ] Asset Monitor
+
+## Notes
+- **NitroJIT**: ARM64 emitter implemented but currently only emits x64 assembly
+- **Meteora**: Should work fine by default
+- **Current completion**: ~20% of total port roadmap
+
 
 ## Dependencies
-
 Core has following dependencies :
 
 - [AsmJIT](https://github.com/asmjit/asmjit)
@@ -38,12 +163,6 @@ Core has following dependencies :
 - [FileWatch](https://github.com/ThomasMonkman/filewatch)
 - [ArgParse++](https://github.com/p-ranav/argparse)
 - [Base64++](https://github.com/zaphoyd/websocketpp/blob/master/websocketpp/base64/base64.hpp)
-
-> [!IMPORTANT]
-> - Edit **base64.hpp** namespace to `base64`
-> - Only header file `libtcc.h` is required from TinyCC beside static library
-> - In **FileWatch.hpp** change `_callback(file.first, file.second);` to `_callback(_path + "/" + file.first, file.second);`
-> - **By using Jenova Builder, All the dependencies are downloaded, manipulated and compiled automatically.**
 
 ## Build Systems
 ### macOS ARM64
@@ -69,8 +188,6 @@ Before using **Jenova Builder** you need to install following prerequisites with
 - CMake (3.20+)
 - Ninja (1.11+)
 
-
-### macOS ARM64 Only
 
 ----
 Developed By **Hamid.Memar (MemarDesign™ LLC.)**
