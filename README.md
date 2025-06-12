@@ -25,11 +25,11 @@
 # Runtime Roadmap
 
 ## Progress Overview
-- [x] Basic runtime building (~20% complete)
+- [x] Basic runtime building
 - [x] NitroJIT ARM64 emitter (currently emits x64 assembly)
 - [x] Meteora component (working by default)
 
-## Remaining Components (~80% of work)
+## Remaining Components
 
 ### 1. Asset Monitor
 - [ ] **File watching system**
@@ -130,15 +130,15 @@
 
 ## Implementation Priority
 
-### Phase 1: Core Infrastructure (Weeks 1-4)
+### Phase 1: Core Infrastructure
 - [ ] Abstraction OS Layer
 - [ ] Metadata Parser
 
-### Phase 2: Compilation Pipeline (Weeks 5-8)
+### Phase 2: Compilation Pipeline
 - [ ] Compiler Interface
 - [ ] Module Wrapper
 
-### Phase 3: Runtime & Development (Weeks 9-12)
+### Phase 3: Runtime & Development
 - [ ] Interpreter
 - [ ] Module Loader
 - [ ] Asset Monitor
@@ -146,7 +146,7 @@
 ## Notes
 - **NitroJIT**: ARM64 emitter implemented but currently only emits x64 assembly
 - **Meteora**: Should work fine by default
-- **Current completion**: ~20% of total port roadmap
+- **Current completion**: ~20%
 
 
 ## Dependencies
