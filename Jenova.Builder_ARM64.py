@@ -467,28 +467,24 @@ def compile_sources(cache_dir, skip_cache=False):
                 '-arch', 'arm64',
                 '-O3', '-fPIC', '-pipe', '-w',
                 '-std=c++20', '-pthread', '-fexceptions'
-            , "-I/opt/homebrew/opt/lz4/include"]
+            ]
             
             # Add defines
             for flag in BUILD_FLAGS:
-                compile_cmd.extend(['-D', flag, "-I/opt/homebrew/opt/lz4/include"])
+                compile_cmd.extend(['-D', flag])
             
             # Add includes
             for inc_dir in INCLUDE_DIRS:
-                compile_cmd.extend(['-I', inc_dir, "-I/opt/homebrew/opt/lz4/include"])
+                compile_cmd.extend(['-I', inc_dir])
             
-            compile_cmd.extend(['-c', source, '-o', obj_file, "-I/opt/homebrew/opt/lz4/include"])
+            compile_cmd.extend(['-c', source, '-o', obj_file])
             
-            compile_tasks.append((source, compile_cmd, obj_file, "-I/opt/homebrew/opt/lz4/include"))
+            compile_tasks.append((source, compile_cmd, obj_file))
             update_cache_entry(source, cache)
         else:
             print_colored(Colors.YELLOW, f"[ ! ] Skipping {Path(source).name} (unchanged)")
     
     # Compile in parallel
-    print(f"Debug: compile_tasks = {compile_tasks}")  # Print the full list
-    for i, task in enumerate(compile_tasks):
-        print(f"Task {i}: Length = {len(task)}, Contents = {task}")  # Check each task structure
-
     if compile_tasks:
         def compile_file(task):
             source, cmd, obj_file = task
@@ -530,10 +526,8 @@ def link_binary(object_files, output_dir):
 		'-mmacosx-version-min=11.0',
 		'-Wl,-undefined,dynamic_lookup',
 		'-Wl,-install_name,@rpath/Jenova.Runtime.DarwinARM64.dylib',
-		'-Wl,-map,' + map_path,
-                "-L/opt/homebrew/opt/lz4/lib",
-                "-llz4"
-        ]
+		'-Wl,-map,' + map_path
+	]
 	
 	link_cmd.extend(object_files)
 	link_cmd.extend(STATIC_LIBS)
