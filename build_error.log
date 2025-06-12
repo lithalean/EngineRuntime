@@ -1,0 +1,374 @@
+[92m
+===========================================================================
+       _________   ______ _    _____       ____        _ __    __
+      / / ____/ | / / __ \ |  / /   |     / __ )__  __(_) /___/ /__  _____
+ __  / / __/ /  |/ / / / / | / / /| |    / __  / / / / / / __  / _ \/ ___/
+/ /_/ / /___/ /|  / /_/ /| |/ / ___ |   / /_/ / /_/ / / / /_/ /  __/ /
+\____/_____/_/ |_/\____/ |___/_/  |_|  /_____/\__,_/_/_/\__,_/\___/_/
+
+===========================================================================
+                    Developed by Hamid.Memar
+===========================================================================
+[0m
+
+[94m[ ✓ ] Checking prerequisites...[0m
+[92m[ ✓ ] All prerequisites satisfied[0m
+[94m[ ⚙ ] Building dependencies...[0m
+[93m[ ! ] Dependencies already exist, skipping download[0m
+[93m[ ! ] AsmJIT already built, skipping[0m
+[93m[ ! ] Curl already built, skipping[0m
+[93m[ ! ] LZMA already built, skipping[0m
+[93m[ ! ] ZLIB already built, skipping[0m
+[93m[ ! ] XML2 already built, skipping[0m
+[93m[ ! ] TinyCC already built, skipping[0m
+[94m[ ⚙ ] Compiling source files...[0m
+[93m[ ! ] Skipping jenova.cpp (unchanged)[0m
+[93m[ ! ] Skipping jenovaSDK.cpp (unchanged)[0m
+[93m[ ! ] Skipping script_instance_base.cpp (unchanged)[0m
+[93m[ ! ] Skipping script_object.cpp (unchanged)[0m
+[93m[ ! ] Skipping script_instance.cpp (unchanged)[0m
+[93m[ ! ] Skipping script_resource.cpp (unchanged)[0m
+[93m[ ! ] Skipping script_interpreter.cpp (unchanged)[0m
+[93m[ ! ] Skipping script_templates.cpp (unchanged)[0m
+[93m[ ! ] Skipping script_language.cpp (unchanged)[0m
+[93m[ ! ] Skipping script_compiler.cpp (unchanged)[0m
+[93m[ ! ] Skipping script_manager.cpp (unchanged)[0m
+[93m[ ! ] Skipping clektron.cpp (unchanged)[0m
+[93m[ ! ] Skipping tiny_profiler.cpp (unchanged)[0m
+[93m[ ! ] Skipping task_system.cpp (unchanged)[0m
+[93m[ ! ] Skipping package_manager.cpp (unchanged)[0m
+[93m[ ! ] Skipping asset_monitor.cpp (unchanged)[0m
+[93m[ ! ] Skipping gdextension_exporter.cpp (unchanged)[0m
+[94m[ ⚙ ] Linking binary...[0m
+[91m[ ✗ ] Linking failed[0m
+Command: clang++ -shared -fPIC -arch arm64 -stdlib=libc++ -Wl,-map,DarwinARM64/Jenova.Runtime.DarwinARM64.map DarwinARM64/Cache/jenova.o DarwinARM64/Cache/jenovaSDK.o DarwinARM64/Cache/script_instance_base.o DarwinARM64/Cache/script_object.o DarwinARM64/Cache/script_instance.o DarwinARM64/Cache/script_resource.o DarwinARM64/Cache/script_interpreter.o DarwinARM64/Cache/script_templates.o DarwinARM64/Cache/script_language.o DarwinARM64/Cache/script_compiler.o DarwinARM64/Cache/script_manager.o DarwinARM64/Cache/clektron.o DarwinARM64/Cache/tiny_profiler.o DarwinARM64/Cache/task_system.o DarwinARM64/Cache/package_manager.o DarwinARM64/Cache/asset_monitor.o DarwinARM64/Cache/gdextension_exporter.o Libs/libzlib-static-arm64.a Libs/libtcc-static-arm64.a Libs/libgodotcpp-static-arm64.a Libs/libcurl-static-arm64.a Libs/libasmjit-static-arm64.a Libs/libarchive-static-arm64.a Libs/liblzma-static-arm64.a Libs/libxml2-static-arm64.a Libs/OpenSSL/libssl-arm64.a Libs/OpenSSL/libcrypto-arm64.a -framework CoreFoundation -framework Security -o DarwinARM64/Jenova.Runtime.DarwinARM64.dylib
+Error: Undefined symbols for architecture arm64:
+  "_FSEventStreamCreate", referenced from:
+      filewatch::FileWatch<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>::get_directory(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&) in asset_monitor.o
+      filewatch::FileWatch<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>::openStreamForFile(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&) in asset_monitor.o
+  "_FSEventStreamInvalidate", referenced from:
+      filewatch::FileWatch<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>::destroy() in asset_monitor.o
+  "_FSEventStreamRelease", referenced from:
+      filewatch::FileWatch<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>::destroy() in asset_monitor.o
+  "_FSEventStreamScheduleWithRunLoop", referenced from:
+      filewatch::FileWatch<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>::init()::'lambda0'()::operator()() const in asset_monitor.o
+  "_FSEventStreamStart", referenced from:
+      filewatch::FileWatch<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>::init()::'lambda0'()::operator()() const in asset_monitor.o
+  "_FSEventStreamStop", referenced from:
+      filewatch::FileWatch<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>::destroy() in asset_monitor.o
+  "_LZ4_decompress_safe", referenced from:
+      _lz4_filter_read_default_stream in libarchive-static-arm64.a[46](archive_read_support_filter_lz4.c.o)
+      _lz4_filter_read_legacy_stream in libarchive-static-arm64.a[46](archive_read_support_filter_lz4.c.o)
+  "_LZ4_decompress_safe_usingDict", referenced from:
+      _lz4_filter_read_default_stream in libarchive-static-arm64.a[46](archive_read_support_filter_lz4.c.o)
+  "_SCDynamicStoreCopyProxies", referenced from:
+      _Curl_macos_init in libcurl-static-arm64.a[81](macos.c.o)
+  "_SSL_get0_group_name", referenced from:
+      _ossl_connect_common in libcurl-static-arm64.a[154](openssl.c.o)
+  "_ZSTD_DStreamOutSize", referenced from:
+      _zstd_bidder_init in libarchive-static-arm64.a[53](archive_read_support_filter_zstd.c.o)
+      _zip_read_data_zipx_zstd in libarchive-static-arm64.a[70](archive_read_support_format_zip.c.o)
+  "_ZSTD_createDStream", referenced from:
+      _zstd_do_init in libcurl-static-arm64.a[17](content_encoding.c.o)
+      _zstd_bidder_init in libarchive-static-arm64.a[53](archive_read_support_filter_zstd.c.o)
+      _init_decompression in libarchive-static-arm64.a[54](archive_read_support_format_7zip.c.o)
+      _zip_read_data_zipx_zstd in libarchive-static-arm64.a[70](archive_read_support_format_zip.c.o)
+  "_ZSTD_decompressStream", referenced from:
+      _zstd_do_write in libcurl-static-arm64.a[17](content_encoding.c.o)
+      _zstd_filter_read in libarchive-static-arm64.a[53](archive_read_support_filter_zstd.c.o)
+      _extract_pack_stream in libarchive-static-arm64.a[54](archive_read_support_format_7zip.c.o)
+      _zip_read_data_zipx_zstd in libarchive-static-arm64.a[70](archive_read_support_format_zip.c.o)
+  "_ZSTD_freeDStream", referenced from:
+      _zstd_do_close in libcurl-static-arm64.a[17](content_encoding.c.o)
+      _zstd_bidder_init in libarchive-static-arm64.a[53](archive_read_support_filter_zstd.c.o)
+      _zstd_filter_close in libarchive-static-arm64.a[53](archive_read_support_filter_zstd.c.o)
+      _archive_read_format_7zip_cleanup in libarchive-static-arm64.a[54](archive_read_support_format_7zip.c.o)
+      _init_decompression in libarchive-static-arm64.a[54](archive_read_support_format_7zip.c.o)
+      _archive_read_format_zip_cleanup in libarchive-static-arm64.a[70](archive_read_support_format_zip.c.o)
+      _zip_read_data_zipx_zstd in libarchive-static-arm64.a[70](archive_read_support_format_zip.c.o)
+      _zip_read_data_zipx_zstd in libarchive-static-arm64.a[70](archive_read_support_format_zip.c.o)
+      ...
+  "_ZSTD_getErrorName", referenced from:
+      _zstd_filter_read in libarchive-static-arm64.a[53](archive_read_support_filter_zstd.c.o)
+      _zstd_filter_read in libarchive-static-arm64.a[53](archive_read_support_filter_zstd.c.o)
+      _extract_pack_stream in libarchive-static-arm64.a[54](archive_read_support_format_7zip.c.o)
+      _zip_read_data_zipx_zstd in libarchive-static-arm64.a[70](archive_read_support_format_zip.c.o)
+      _zip_read_data_zipx_zstd in libarchive-static-arm64.a[70](archive_read_support_format_zip.c.o)
+  "_ZSTD_initDStream", referenced from:
+      _zstd_filter_read in libarchive-static-arm64.a[53](archive_read_support_filter_zstd.c.o)
+      _zip_read_data_zipx_zstd in libarchive-static-arm64.a[70](archive_read_support_format_zip.c.o)
+  "_ZSTD_isError", referenced from:
+      _zstd_do_write in libcurl-static-arm64.a[17](content_encoding.c.o)
+      _zstd_filter_read in libarchive-static-arm64.a[53](archive_read_support_filter_zstd.c.o)
+      _zstd_filter_read in libarchive-static-arm64.a[53](archive_read_support_filter_zstd.c.o)
+      _extract_pack_stream in libarchive-static-arm64.a[54](archive_read_support_format_7zip.c.o)
+      _zip_read_data_zipx_zstd in libarchive-static-arm64.a[70](archive_read_support_format_zip.c.o)
+      _zip_read_data_zipx_zstd in libarchive-static-arm64.a[70](archive_read_support_format_zip.c.o)
+  "_ber_free", referenced from:
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+  "_blake2sp_final", referenced from:
+      _verify_global_checksums in libarchive-static-arm64.a[65](archive_read_support_format_rar5.c.o)
+  "_blake2sp_init", referenced from:
+      _process_head_file in libarchive-static-arm64.a[65](archive_read_support_format_rar5.c.o)
+  "_blake2sp_update", referenced from:
+      _update_crc in libarchive-static-arm64.a[65](archive_read_support_format_rar5.c.o)
+  "_iconv", referenced from:
+      _iconv_strncat_in_locale in libarchive-static-arm64.a[71](archive_string.c.o)
+  "_iconv_close", referenced from:
+      _free_sconv_object in libarchive-static-arm64.a[71](archive_string.c.o)
+      _free_sconv_object in libarchive-static-arm64.a[71](archive_string.c.o)
+  "_iconv_open", referenced from:
+      _get_sconv_object in libarchive-static-arm64.a[71](archive_string.c.o)
+  "_idn2_check_version", referenced from:
+      _Curl_idn_decode in libcurl-static-arm64.a[73](idn.c.o)
+  "_idn2_free", referenced from:
+      _Curl_idn_decode in libcurl-static-arm64.a[73](idn.c.o)
+      _Curl_idn_encode in libcurl-static-arm64.a[73](idn.c.o)
+  "_idn2_lookup_ul", referenced from:
+      _Curl_idn_decode in libcurl-static-arm64.a[73](idn.c.o)
+      _Curl_idn_decode in libcurl-static-arm64.a[73](idn.c.o)
+  "_idn2_to_unicode_8z8z", referenced from:
+      _Curl_idn_encode in libcurl-static-arm64.a[73](idn.c.o)
+  "_ldap_err2string", referenced from:
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+  "_ldap_first_attribute", referenced from:
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+  "_ldap_first_entry", referenced from:
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+  "_ldap_free_urldesc", referenced from:
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+  "_ldap_get_dn", referenced from:
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+  "_ldap_get_values_len", referenced from:
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+  "_ldap_init", referenced from:
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+  "_ldap_memfree", referenced from:
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+  "_ldap_msgfree", referenced from:
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+  "_ldap_next_attribute", referenced from:
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+  "_ldap_next_entry", referenced from:
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+  "_ldap_search_s", referenced from:
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+  "_ldap_set_option", referenced from:
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+  "_ldap_simple_bind_s", referenced from:
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+  "_ldap_unbind_s", referenced from:
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+  "_ldap_url_parse", referenced from:
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+  "_ldap_value_free_len", referenced from:
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+      _ldap_do in libcurl-static-arm64.a[79](ldap.c.o)
+  "_nghttp2_http2_strerror", referenced from:
+      _cf_h2_proxy_recv in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _proxy_h2_on_stream_close in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _on_stream_close in libcurl-static-arm64.a[65](http2.c.o)
+      _http2_handle_stream_close in libcurl-static-arm64.a[65](http2.c.o)
+      _http2_handle_stream_close in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_is_fatal", referenced from:
+      _cf_h2_proxy_send in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_proxy_cntrl in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _proxy_h2_progress_egress in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_cntrl in libcurl-static-arm64.a[65](http2.c.o)
+      _h2_progress_egress in libcurl-static-arm64.a[65](http2.c.o)
+      _h2_progress_egress in libcurl-static-arm64.a[65](http2.c.o)
+      _on_frame_recv in libcurl-static-arm64.a[65](http2.c.o)
+      _on_frame_recv in libcurl-static-arm64.a[65](http2.c.o)
+      ...
+  "_nghttp2_option_del", referenced from:
+      _cf_h2_proxy_connect in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_connect in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_option_new", referenced from:
+      _cf_h2_proxy_connect in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_connect in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_option_set_no_auto_window_update", referenced from:
+      _cf_h2_proxy_connect in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_connect in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_option_set_no_rfc9113_leading_and_trailing_ws_validation", referenced from:
+      _cf_h2_proxy_connect in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_connect in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_pack_settings_payload", referenced from:
+      _populate_binsettings in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_priority_spec_init", referenced from:
+      _h2_pri_spec in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_session_callbacks_del", referenced from:
+      _cf_h2_proxy_connect in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_connect in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_session_callbacks_new", referenced from:
+      _cf_h2_proxy_connect in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_connect in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_session_callbacks_set_error_callback", referenced from:
+      _cf_h2_connect in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_session_callbacks_set_on_begin_headers_callback", referenced from:
+      _cf_h2_connect in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_session_callbacks_set_on_data_chunk_recv_callback", referenced from:
+      _cf_h2_proxy_connect in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_connect in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_session_callbacks_set_on_frame_recv_callback", referenced from:
+      _cf_h2_proxy_connect in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_connect in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_session_callbacks_set_on_frame_send_callback", referenced from:
+      _cf_h2_proxy_connect in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_connect in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_session_callbacks_set_on_header_callback", referenced from:
+      _cf_h2_proxy_connect in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_connect in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_session_callbacks_set_on_stream_close_callback", referenced from:
+      _cf_h2_proxy_connect in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_connect in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_session_callbacks_set_send_callback", referenced from:
+      _cf_h2_proxy_connect in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_connect in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_session_check_request_allowed", referenced from:
+      _cf_h2_send in libcurl-static-arm64.a[65](http2.c.o)
+      _cf_h2_query in libcurl-static-arm64.a[65](http2.c.o)
+      _h2_process_pending_input in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_session_client_new3", referenced from:
+      _cf_h2_proxy_connect in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_connect in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_session_consume", referenced from:
+      _cf_h2_proxy_recv in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _on_data_chunk_recv in libcurl-static-arm64.a[65](http2.c.o)
+      _on_data_chunk_recv in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_session_del", referenced from:
+      _cf_h2_proxy_ctx_clear in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_close in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_session_get_local_window_size", referenced from:
+      _cf_h2_recv in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_session_get_remote_settings", referenced from:
+      _on_frame_recv in libcurl-static-arm64.a[65](http2.c.o)
+      _on_frame_recv in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_session_get_remote_window_size", referenced from:
+      _cf_h2_proxy_adjust_pollset in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_proxy_send in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_proxy_cntrl in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_adjust_pollset in libcurl-static-arm64.a[65](http2.c.o)
+      _cf_h2_send in libcurl-static-arm64.a[65](http2.c.o)
+      _cf_h2_send in libcurl-static-arm64.a[65](http2.c.o)
+      _cf_h2_cntrl in libcurl-static-arm64.a[65](http2.c.o)
+      _cf_h2_cntrl in libcurl-static-arm64.a[65](http2.c.o)
+      ...
+  "_nghttp2_session_get_stream_effective_local_window_size", referenced from:
+      _cf_h2_recv in libcurl-static-arm64.a[65](http2.c.o)
+      _on_frame_recv in libcurl-static-arm64.a[65](http2.c.o)
+      _cf_h2_update_local_win in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_session_get_stream_effective_recv_data_length", referenced from:
+      _cf_h2_recv in libcurl-static-arm64.a[65](http2.c.o)
+      _on_frame_recv in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_session_get_stream_remote_window_size", referenced from:
+      _cf_h2_proxy_adjust_pollset in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_proxy_send in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_proxy_cntrl in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_adjust_pollset in libcurl-static-arm64.a[65](http2.c.o)
+      _cf_h2_send in libcurl-static-arm64.a[65](http2.c.o)
+      _cf_h2_cntrl in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_session_get_stream_user_data", referenced from:
+      _tunnel_send_callback in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _on_frame_recv in libcurl-static-arm64.a[65](http2.c.o)
+      _on_data_chunk_recv in libcurl-static-arm64.a[65](http2.c.o)
+      _on_stream_close in libcurl-static-arm64.a[65](http2.c.o)
+      _on_begin_headers in libcurl-static-arm64.a[65](http2.c.o)
+      _on_header in libcurl-static-arm64.a[65](http2.c.o)
+      _req_body_read_callback in libcurl-static-arm64.a[65](http2.c.o)
+      ...
+  "_nghttp2_session_mem_recv", referenced from:
+      _proxy_h2_process_pending_input in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _h2_process_pending_input in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_session_resume_data", referenced from:
+      _cf_h2_proxy_send in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_proxy_cntrl in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_cntrl in libcurl-static-arm64.a[65](http2.c.o)
+      _on_frame_recv in libcurl-static-arm64.a[65](http2.c.o)
+      _cf_h2_body_send in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_session_send", referenced from:
+      _proxy_h2_progress_egress in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_keep_alive in libcurl-static-arm64.a[65](http2.c.o)
+      _h2_progress_egress in libcurl-static-arm64.a[65](http2.c.o)
+      _http2_data_done in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_session_set_local_window_size", referenced from:
+      _cf_h2_proxy_connect in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_connect in libcurl-static-arm64.a[65](http2.c.o)
+      _cf_h2_update_local_win in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_session_set_stream_user_data", referenced from:
+      _cf_h2_connect in libcurl-static-arm64.a[65](http2.c.o)
+      _on_frame_recv in libcurl-static-arm64.a[65](http2.c.o)
+      _on_stream_close in libcurl-static-arm64.a[65](http2.c.o)
+      _on_stream_close in libcurl-static-arm64.a[65](http2.c.o)
+      _http2_data_done in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_session_upgrade2", referenced from:
+      _cf_h2_connect in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_session_want_read", referenced from:
+      _cf_h2_proxy_shutdown in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_proxy_shutdown in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_proxy_adjust_pollset in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_proxy_adjust_pollset in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _proxy_h2_should_close_session in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_shutdown in libcurl-static-arm64.a[65](http2.c.o)
+      _cf_h2_shutdown in libcurl-static-arm64.a[65](http2.c.o)
+      ...
+  "_nghttp2_session_want_write", referenced from:
+      _cf_h2_proxy_shutdown in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_proxy_shutdown in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_proxy_adjust_pollset in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_proxy_adjust_pollset in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_proxy_adjust_pollset in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _proxy_h2_progress_egress in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _proxy_h2_should_close_session in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      ...
+  "_nghttp2_strerror", referenced from:
+      _cf_h2_proxy_connect in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_proxy_connect in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_proxy_connect in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_proxy_connect in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_proxy_shutdown in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _proxy_h2_progress_egress in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _proxy_h2_process_pending_input in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      ...
+  "_nghttp2_submit_goaway", referenced from:
+      _cf_h2_proxy_shutdown in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_shutdown in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_submit_ping", referenced from:
+      _cf_h2_keep_alive in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_submit_priority", referenced from:
+      _h2_progress_egress in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_submit_request", referenced from:
+      _cf_h2_proxy_connect in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_send in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_submit_rst_stream", referenced from:
+      _on_frame_recv in libcurl-static-arm64.a[65](http2.c.o)
+      _on_frame_recv in libcurl-static-arm64.a[65](http2.c.o)
+      _on_frame_recv in libcurl-static-arm64.a[65](http2.c.o)
+      _on_data_chunk_recv in libcurl-static-arm64.a[65](http2.c.o)
+      _on_header in libcurl-static-arm64.a[65](http2.c.o)
+      _http2_data_done in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_submit_settings", referenced from:
+      _cf_h2_proxy_connect in libcurl-static-arm64.a[10](cf-h2-proxy.c.o)
+      _cf_h2_connect in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_submit_window_update", referenced from:
+      _cf_h2_update_local_win in libcurl-static-arm64.a[65](http2.c.o)
+  "_nghttp2_version", referenced from:
+      _Curl_http2_ver in libcurl-static-arm64.a[65](http2.c.o)
+ld: symbol(s) not found for architecture arm64
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+

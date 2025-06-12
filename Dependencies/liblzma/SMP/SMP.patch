@@ -1,0 +1,47 @@
+diff --git a/src/common/mythread.h b/src/common/mythread.h
+index 10ea2d42..d544a7ec 100644
+--- a/src/common/mythread.h
++++ b/src/common/mythread.h
+@@ -357,8 +357,10 @@ mythread_condtime_set(mythread_condtime *condtime, const mythread_cond *cond,
+ 
+ #define WIN32_LEAN_AND_MEAN
+ #ifdef MYTHREAD_VISTA
+-#	undef _WIN32_WINNT
+-#	define _WIN32_WINNT 0x0600
++#   if !defined(WINAPI_FAMILY) || !(WINAPI_FAMILY==WINAPI_FAMILY_PC_APP || WINAPI_FAMILY==WINAPI_FAMILY_PHONE_APP)
++#	    undef _WIN32_WINNT
++#	    define _WIN32_WINNT 0x0600
++#   endif
+ #endif
+ #include <windows.h>
+ #include <process.h>
+diff --git a/src/common/tuklib_cpucores.c b/src/common/tuklib_cpucores.c
+index c4a781ac..25d3fa6b 100644
+--- a/src/common/tuklib_cpucores.c
++++ b/src/common/tuklib_cpucores.c
+@@ -13,7 +13,9 @@
+ 
+ #if defined(_WIN32) || defined(__CYGWIN__)
+ #	ifndef _WIN32_WINNT
+-#		define _WIN32_WINNT 0x0500
++#       if !defined(WINAPI_FAMILY) || !(WINAPI_FAMILY==WINAPI_FAMILY_PC_APP || WINAPI_FAMILY==WINAPI_FAMILY_PHONE_APP)
++#		    define _WIN32_WINNT 0x0500
++#       endif
+ #	endif
+ #	include <windows.h>
+ 
+diff --git a/src/common/tuklib_physmem.c b/src/common/tuklib_physmem.c
+index 1009df14..77ef362a 100644
+--- a/src/common/tuklib_physmem.c
++++ b/src/common/tuklib_physmem.c
+@@ -16,7 +16,9 @@
+ // gives wrong results (from our point of view).
+ #if defined(_WIN32) || defined(__CYGWIN__)
+ #	ifndef _WIN32_WINNT
+-#		define _WIN32_WINNT 0x0500
++#       if !defined(WINAPI_FAMILY) || !(WINAPI_FAMILY==WINAPI_FAMILY_PC_APP || WINAPI_FAMILY==WINAPI_FAMILY_PHONE_APP)
++#		    define _WIN32_WINNT 0x0500
++#       endif
+ #	endif
+ #	include <windows.h>
+ 

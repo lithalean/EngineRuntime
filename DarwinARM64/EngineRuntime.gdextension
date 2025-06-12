@@ -1,0 +1,9 @@
+[configuration]
+entry_symbol = "InitializeRuntime"
+compatibility_minimum = "4.1"
+compatibility_minimum_lithium = "1.1"
+reloadable = false
+
+[libraries]
+macos.debug.arm64 = "res://addons/jenova/Jenova.Runtime.DarwinARM64.dylib"
+macos.release.arm64 = "res://addons/jenova/Jenova.Runtime.DarwinARM64.dylib"
