@@ -70,8 +70,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-ZzGBSt"
-      binary: "/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-ZzGBSt"
+      source: "/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-67ONJV"
+      binary: "/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-67ONJV"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-std=c++20 -w -fPIC -arch arm64"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -84,16 +84,16 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-ZzGBSt'
+        Change Dir: '/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-67ONJV'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_5ec1d
-        [1/2] /usr/bin/clang++   -std=c++20 -w -fPIC -arch arm64  -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_5ec1d.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_5ec1d.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_5ec1d.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_00af8
+        [1/2] /usr/bin/clang++   -std=c++20 -w -fPIC -arch arm64  -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_00af8.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_00af8.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_00af8.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Apple clang version 16.0.0 (clang-1600.0.26.3)
         Target: arm64-apple-darwin24.3.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
         ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.0 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-ZzGBSt -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_5ec1d.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_5ec1d.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -w -std=c++20 -fdeprecated-macro -fdebug-compilation-dir=/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-ZzGBSt -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fno-implicit-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_5ec1d.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.0 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-67ONJV -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_00af8.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_00af8.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -w -std=c++20 -fdeprecated-macro -fdebug-compilation-dir=/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-67ONJV -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fno-implicit-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_00af8.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 16.0.0 (clang-1600.0.26.3) default target arm64-apple-darwin24.3.0
         ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"
         ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
@@ -106,12 +106,12 @@ events:
          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
          /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
         End of search list.
-        [2/2] : && /usr/bin/clang++ -std=c++20 -w -fPIC -arch arm64  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -framework Security -framework CoreFoundation -arch arm64 -v -Wl,-v CMakeFiles/cmTC_5ec1d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_5ec1d   && :
+        [2/2] : && /usr/bin/clang++ -std=c++20 -w -fPIC -arch arm64  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -framework Security -framework CoreFoundation -arch arm64 -v -Wl,-v CMakeFiles/cmTC_00af8.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_00af8   && :
         Apple clang version 16.0.0 (clang-1600.0.26.3)
         Target: arm64-apple-darwin24.3.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -w -mllvm -enable-linkonceodr-outlining -o cmTC_5ec1d -L/usr/local/lib -search_paths_first -headerpad_max_install_names -framework Security -framework CoreFoundation -v CMakeFiles/cmTC_5ec1d.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -w -mllvm -enable-linkonceodr-outlining -o cmTC_00af8 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -framework Security -framework CoreFoundation -v CMakeFiles/cmTC_00af8.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld PROJECT:ld-1115.7.3
         BUILD 13:29:00 Aug  9 2024
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
@@ -169,16 +169,16 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-ZzGBSt']
+        ignore line: [Change Dir: '/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-67ONJV']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_5ec1d]
-        ignore line: [[1/2] /usr/bin/clang++   -std=c++20 -w -fPIC -arch arm64  -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_5ec1d.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_5ec1d.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_5ec1d.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_00af8]
+        ignore line: [[1/2] /usr/bin/clang++   -std=c++20 -w -fPIC -arch arm64  -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_00af8.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_00af8.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_00af8.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.3)]
         ignore line: [Target: arm64-apple-darwin24.3.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
         ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"]
-        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.0 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-ZzGBSt -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_5ec1d.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_5ec1d.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -w -std=c++20 -fdeprecated-macro -fdebug-compilation-dir=/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-ZzGBSt -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fno-implicit-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_5ec1d.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.0 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-67ONJV -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_00af8.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_00af8.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -w -std=c++20 -fdeprecated-macro -fdebug-compilation-dir=/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-67ONJV -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fno-implicit-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_00af8.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 16.0.0 (clang-1600.0.26.3) default target arm64-apple-darwin24.3.0]
         ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"]
@@ -191,12 +191,12 @@ events:
         ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
         ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [[2/2] : && /usr/bin/clang++ -std=c++20 -w -fPIC -arch arm64  -arch arm64 -Wl -search_paths_first -Wl -headerpad_max_install_names -framework Security -framework CoreFoundation -arch arm64 -v -Wl -v CMakeFiles/cmTC_5ec1d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_5ec1d   && :]
+        ignore line: [[2/2] : && /usr/bin/clang++ -std=c++20 -w -fPIC -arch arm64  -arch arm64 -Wl -search_paths_first -Wl -headerpad_max_install_names -framework Security -framework CoreFoundation -arch arm64 -v -Wl -v CMakeFiles/cmTC_00af8.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_00af8   && :]
         ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.3)]
         ignore line: [Target: arm64-apple-darwin24.3.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -w -mllvm -enable-linkonceodr-outlining -o cmTC_5ec1d -L/usr/local/lib -search_paths_first -headerpad_max_install_names -framework Security -framework CoreFoundation -v CMakeFiles/cmTC_5ec1d.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -w -mllvm -enable-linkonceodr-outlining -o cmTC_00af8 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -framework Security -framework CoreFoundation -v CMakeFiles/cmTC_00af8.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -214,7 +214,7 @@ events:
           arg [-mllvm] ==> ignore
           arg [-enable-linkonceodr-outlining] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_5ec1d] ==> ignore
+          arg [cmTC_00af8] ==> ignore
           arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
           arg [-search_paths_first] ==> ignore
           arg [-headerpad_max_install_names] ==> ignore
@@ -223,7 +223,7 @@ events:
           arg [-framework] ==> ignore
           arg [CoreFoundation] ==> ignore
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_5ec1d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_00af8.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lc++] ==> lib [c++]
           arg [-lSystem] ==> lib [System]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
@@ -269,8 +269,8 @@ events:
     checks:
       - "Performing Test __CxxFlag__fno_threadsafe_statics"
     directories:
-      source: "/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-z6p2Sc"
-      binary: "/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-z6p2Sc"
+      source: "/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-twxl9r"
+      binary: "/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-twxl9r"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-std=c++20 -w -fPIC -arch arm64"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -282,11 +282,11 @@ events:
       variable: "__CxxFlag__fno_threadsafe_statics"
       cached: true
       stdout: |
-        Change Dir: '/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-z6p2Sc'
+        Change Dir: '/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-twxl9r'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_f7682
-        [1/2] /usr/bin/clang++ -D__CxxFlag__fno_threadsafe_statics  -std=c++20 -w -fPIC -arch arm64  -arch arm64   -fno-threadsafe-statics -MD -MT CMakeFiles/cmTC_f7682.dir/src.cxx.o -MF CMakeFiles/cmTC_f7682.dir/src.cxx.o.d -o CMakeFiles/cmTC_f7682.dir/src.cxx.o -c /Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-z6p2Sc/src.cxx
-        [2/2] : && /usr/bin/clang++ -std=c++20 -w -fPIC -arch arm64  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -framework Security -framework CoreFoundation -arch arm64 CMakeFiles/cmTC_f7682.dir/src.cxx.o -o cmTC_f7682   && :
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_d86ad
+        [1/2] /usr/bin/clang++ -D__CxxFlag__fno_threadsafe_statics  -std=c++20 -w -fPIC -arch arm64  -arch arm64   -fno-threadsafe-statics -MD -MT CMakeFiles/cmTC_d86ad.dir/src.cxx.o -MF CMakeFiles/cmTC_d86ad.dir/src.cxx.o.d -o CMakeFiles/cmTC_d86ad.dir/src.cxx.o -c /Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-twxl9r/src.cxx
+        [2/2] : && /usr/bin/clang++ -std=c++20 -w -fPIC -arch arm64  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -framework Security -framework CoreFoundation -arch arm64 CMakeFiles/cmTC_d86ad.dir/src.cxx.o -o cmTC_d86ad   && :
         
       exitCode: 0
   -
@@ -300,8 +300,8 @@ events:
     checks:
       - "Performing Test __CxxFlag__fmerge_all_constants"
     directories:
-      source: "/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-1bf777"
-      binary: "/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-1bf777"
+      source: "/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-cjT5Ng"
+      binary: "/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-cjT5Ng"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-std=c++20 -w -fPIC -arch arm64"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -313,11 +313,11 @@ events:
       variable: "__CxxFlag__fmerge_all_constants"
       cached: true
       stdout: |
-        Change Dir: '/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-1bf777'
+        Change Dir: '/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-cjT5Ng'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_97929
-        [1/2] /usr/bin/clang++ -D__CxxFlag__fmerge_all_constants  -std=c++20 -w -fPIC -arch arm64  -arch arm64   -fmerge-all-constants -MD -MT CMakeFiles/cmTC_97929.dir/src.cxx.o -MF CMakeFiles/cmTC_97929.dir/src.cxx.o.d -o CMakeFiles/cmTC_97929.dir/src.cxx.o -c /Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-1bf777/src.cxx
-        [2/2] : && /usr/bin/clang++ -std=c++20 -w -fPIC -arch arm64  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -framework Security -framework CoreFoundation -arch arm64 CMakeFiles/cmTC_97929.dir/src.cxx.o -o cmTC_97929   && :
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_cc814
+        [1/2] /usr/bin/clang++ -D__CxxFlag__fmerge_all_constants  -std=c++20 -w -fPIC -arch arm64  -arch arm64   -fmerge-all-constants -MD -MT CMakeFiles/cmTC_cc814.dir/src.cxx.o -MF CMakeFiles/cmTC_cc814.dir/src.cxx.o.d -o CMakeFiles/cmTC_cc814.dir/src.cxx.o -c /Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-cjT5Ng/src.cxx
+        [2/2] : && /usr/bin/clang++ -std=c++20 -w -fPIC -arch arm64  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -framework Security -framework CoreFoundation -arch arm64 CMakeFiles/cmTC_cc814.dir/src.cxx.o -o cmTC_cc814   && :
         
       exitCode: 0
   -
@@ -331,8 +331,8 @@ events:
     checks:
       - "Performing Test __CxxFlag__fno_enforce_eh_specs"
     directories:
-      source: "/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-E8iKAM"
-      binary: "/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-E8iKAM"
+      source: "/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-3suXrn"
+      binary: "/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-3suXrn"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-std=c++20 -w -fPIC -arch arm64"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -344,12 +344,12 @@ events:
       variable: "__CxxFlag__fno_enforce_eh_specs"
       cached: true
       stdout: |
-        Change Dir: '/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-E8iKAM'
+        Change Dir: '/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-3suXrn'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_70005
-        [1/2] /usr/bin/clang++ -D__CxxFlag__fno_enforce_eh_specs  -std=c++20 -w -fPIC -arch arm64  -arch arm64   -fno-enforce-eh-specs -MD -MT CMakeFiles/cmTC_70005.dir/src.cxx.o -MF CMakeFiles/cmTC_70005.dir/src.cxx.o.d -o CMakeFiles/cmTC_70005.dir/src.cxx.o -c /Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-E8iKAM/src.cxx
-        FAILED: CMakeFiles/cmTC_70005.dir/src.cxx.o 
-        /usr/bin/clang++ -D__CxxFlag__fno_enforce_eh_specs  -std=c++20 -w -fPIC -arch arm64  -arch arm64   -fno-enforce-eh-specs -MD -MT CMakeFiles/cmTC_70005.dir/src.cxx.o -MF CMakeFiles/cmTC_70005.dir/src.cxx.o.d -o CMakeFiles/cmTC_70005.dir/src.cxx.o -c /Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-E8iKAM/src.cxx
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_3fed8
+        [1/2] /usr/bin/clang++ -D__CxxFlag__fno_enforce_eh_specs  -std=c++20 -w -fPIC -arch arm64  -arch arm64   -fno-enforce-eh-specs -MD -MT CMakeFiles/cmTC_3fed8.dir/src.cxx.o -MF CMakeFiles/cmTC_3fed8.dir/src.cxx.o.d -o CMakeFiles/cmTC_3fed8.dir/src.cxx.o -c /Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-3suXrn/src.cxx
+        FAILED: CMakeFiles/cmTC_3fed8.dir/src.cxx.o 
+        /usr/bin/clang++ -D__CxxFlag__fno_enforce_eh_specs  -std=c++20 -w -fPIC -arch arm64  -arch arm64   -fno-enforce-eh-specs -MD -MT CMakeFiles/cmTC_3fed8.dir/src.cxx.o -MF CMakeFiles/cmTC_3fed8.dir/src.cxx.o.d -o CMakeFiles/cmTC_3fed8.dir/src.cxx.o -c /Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-3suXrn/src.cxx
         clang++: error: unknown argument: '-fno-enforce-eh-specs'
         ninja: build stopped: subcommand failed.
         
@@ -363,8 +363,8 @@ events:
     checks:
       - "Performing Test ASMJIT_LIBC_HAS_LIBPTHREAD"
     directories:
-      source: "/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-xhgVen"
-      binary: "/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-xhgVen"
+      source: "/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-0oPxGt"
+      binary: "/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-0oPxGt"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-std=c++20 -w -fPIC -arch arm64"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -376,11 +376,11 @@ events:
       variable: "ASMJIT_LIBC_HAS_LIBPTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-xhgVen'
+        Change Dir: '/Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-0oPxGt'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_5d69d
-        [1/2] /usr/bin/clang++ -DASMJIT_LIBC_HAS_LIBPTHREAD  -std=c++20 -w -fPIC -arch arm64  -arch arm64 -MD -MT CMakeFiles/cmTC_5d69d.dir/src.cxx.o -MF CMakeFiles/cmTC_5d69d.dir/src.cxx.o.d -o CMakeFiles/cmTC_5d69d.dir/src.cxx.o -c /Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-xhgVen/src.cxx
-        [2/2] : && /usr/bin/clang++ -std=c++20 -w -fPIC -arch arm64  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -framework Security -framework CoreFoundation -arch arm64 CMakeFiles/cmTC_5d69d.dir/src.cxx.o -o cmTC_5d69d   && :
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_7b50f
+        [1/2] /usr/bin/clang++ -DASMJIT_LIBC_HAS_LIBPTHREAD  -std=c++20 -w -fPIC -arch arm64  -arch arm64 -MD -MT CMakeFiles/cmTC_7b50f.dir/src.cxx.o -MF CMakeFiles/cmTC_7b50f.dir/src.cxx.o.d -o CMakeFiles/cmTC_7b50f.dir/src.cxx.o -c /Users/lithalean/Documents/Developer/3_Build/Github/EngineRuntime/DarwinARM64/Cache/asmjit/CMakeFiles/CMakeScratch/TryCompile-0oPxGt/src.cxx
+        [2/2] : && /usr/bin/clang++ -std=c++20 -w -fPIC -arch arm64  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -framework Security -framework CoreFoundation -arch arm64 CMakeFiles/cmTC_7b50f.dir/src.cxx.o -o cmTC_7b50f   && :
         
       exitCode: 0
 ...

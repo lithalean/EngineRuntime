@@ -40,13 +40,21 @@ class RepoCleanup:
 			'lib', 'Lib', 'LIB',
 			'obj', 'Obj', 'OBJ',
 			'Debug', 'Release',
-			'x64', 'x86', 'Win32',
+			'Win32',
 			'.vs', '.vscode/ipch',
 			'__pycache__',
 			'node_modules',
 			'target', 'dist',
 			'CMakeFiles',
 			'.idea'
+		}
+		
+		# Architecture directories to remove only in specific contexts
+		self.conditional_remove_dirs = {
+			'x64': ['build/', 'Build/', 'bin/', 'Bin/', 'lib/', 'Lib/', 'out/', 'cmake-build-'],
+			'x86': ['build/', 'Build/', 'bin/', 'Bin/', 'lib/', 'Lib/', 'out/', 'cmake-build-'],
+			'arm64': ['build/', 'Build/', 'bin/', 'Bin/', 'lib/', 'Lib/', 'out/', 'cmake-build-'],
+			'aarch64': ['build/', 'Build/', 'bin/', 'Bin/', 'lib/', 'Lib/', 'out/', 'cmake-build-']
 		}
 		
 		# Files to definitely keep (by extension)
@@ -130,6 +138,19 @@ class RepoCleanup:
 		# Remove known build/cache directories
 		if dir_name in self.remove_dirs:
 			return False
+			
+		# Handle architecture directories conditionally
+		if dir_name in self.conditional_remove_dirs:
+			parent_path = str(dir_path.parent).lower()
+			remove_contexts = self.conditional_remove_dirs[dir_name]
+			
+			# Only remove arch dirs if they're inside build/output directories
+			for context in remove_contexts:
+				if context.rstrip('/') in parent_path:
+					return False
+			
+			# Keep arch directories in source code contexts (like src/asmjit/x86/)
+			return True
 			
 		# Keep other directories by default
 		return True
