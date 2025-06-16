@@ -1,231 +1,253 @@
 # Jenova Runtime
-*An Open Source, modern Darwin ARM64 Runtime Porting Effort following native performance principles*
+*An Open Source, Darwin ARM64 Runtime Porting Effort following native performance principles*
 
-![Platform Support](https://img.shields.io/badge/platform-macOS%20%7C%20Linux%20%7C%20Windows-blue)
+![Platform Support](https://img.shields.io/badge/platform-macOS%20ARM64%20ONLY-blue)
 ![C++ Version](https://img.shields.io/badge/C++-17+-orange)
-![Build System](https://img.shields.io/badge/build-CMake%20%7C%20Ninja-green)
+![Build System](https://img.shields.io/badge/build-Python%20ARM64-green)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
-## ✨ Current Status: **IN DEVELOPMENT (~20% Complete)**
+## ✨ Current Status: **DARWIN ARM64 PORTING (~20% Complete)**
 
 ## 🎯 Project Vision
 
-Building a **high-performance, cross-platform runtime** that bridges SwiftUI native experiences with Godot's powerful game engine core. This hybrid architecture enables native iOS/macOS UI while maintaining Godot's performance-critical C++ gameplay systems.
+Building a **high-performance, Darwin ARM64 EXCLUSIVE runtime** that bridges SwiftUI native experiences with Godot's powerful game engine core. This hybrid architecture enables native macOS UI while maintaining Godot's performance-critical C++ gameplay systems.
 
-The runtime features a unique dual-layer architecture with SwiftUI handling platform integration and Godot + Jenova Core managing gameplay systems! 🎉
+**IMPORTANT**: This is a **Darwin ARM64 ONLY** project. No Linux or Windows support is planned. The runtime is designed specifically for Apple Silicon with native Foundation framework integration.
 
-### 🚀 **What's Working Right Now:**
-- ✅ **Basic Runtime Building** - Core infrastructure compiles and runs
-- ✅ **NitroJIT ARM64 Emitter** - JIT compilation system (currently x64 assembly output)
-- ✅ **Meteora Component** - Working by default with runtime integration
-- ✅ **Cross-Platform Foundation** - macOS ARM64 primary target with multi-platform support
-- ✅ **Build System** - Jenova Builder with Python automation
-- ✅ **Dependency Management** - Complete C++ library integration
+The runtime features a unique dual-layer architecture with SwiftUI handling platform integration and Godot + Jenova Core managing gameplay systems! 🍎
+
+### 🚀 **What's Being Ported:**
+- 🔧 **Source Code Analysis** - Complete 50+ file C++ runtime codebase identified
+- 🎯 **Darwin ARM64 Target** - Porting existing cross-platform code to Darwin-native
+- 🏗️ **SwiftUI Integration** - Implementing native dual-layer architecture
+- ⚡ **Foundation APIs** - Replacing portable abstractions with Darwin-native calls
+- 🔥 **Metal + Core Audio** - Darwin-specific performance optimizations
+- 🧠 **NitroJIT ARM64** - Porting x86 JIT backend to native ARM64 Darwin
 
 ## Features
 
-### 🏗️ **Hybrid Architecture**
-- **SwiftUI Native Layer** - Platform-native UI for splash, menus, settings, social, IAP, and profiles
-- **Godot + Jenova Core** - Pure gameplay experience with physics, rendering, audio, and effects
-- **Bridge System** - Seamless communication between native UI and game engine
-- **Performance-Critical C++** - Optimized for ARM64 with Darwin-specific enhancements
+### 🏗️ **Darwin-Native Dual Architecture**
+- **SwiftUI Native Layer** - Pure Darwin UI for splash, menus, settings, social, IAP, and profiles
+- **Godot + Jenova Core** - Game engine with Darwin ARM64 optimizations
+- **Foundation Bridge** - Native Darwin communication between UI and engine layers
+- **ARM64 Performance** - Darwin-specific optimizations with Metal and Core Audio
 
-### 🧠 **Darwin ARM64 Developer-Focused Design**
-- **Native Performance** - ARM64 optimized compilation and runtime execution
-- **Hot-Reload Development** - Live script changes with state preservation
-- **Cross-Platform Compatibility** - Primary macOS ARM64 with Windows/Linux support
-- **Modern C++ Standards** - C++17+ with Clang 18+ and GCC 13+ support
-- **Professional Build System** - CMake + Ninja with automated dependency management
+### 🧠 **Darwin ARM64 Exclusive Design**
+- **Foundation Framework** - Native Darwin APIs replacing cross-platform abstractions
+- **Metal Graphics** - Darwin GPU acceleration instead of OpenGL/Vulkan
+- **Core Audio** - Native Darwin audio processing
+- **FSEvents/kqueue** - Darwin file system monitoring for hot-reload
+- **Xcode Integration** - Native Darwin development workflow
+- **Instruments Profiling** - Darwin-native performance analysis
 
-### 🔧 **Runtime Components**
-- **Asset Monitor** - File watching with hot-reload functionality
-- **Abstraction OS Layer** - Platform detection and native API wrapping
-- **Interpreter Engine** - C++ AST walking with runtime execution
-- **Compiler Interface** - Clang/GCC/MSVC integration with dynamic compilation
-- **Metadata Parser** - C++ code analysis with reflection data generation
-- **Module System** - GDExtension interface with dynamic loading
+### 🔧 **Porting Components**
+- **NitroJIT ARM64** - Converting x86 JIT backend to native ARM64 Darwin
+- **Asset Monitor Darwin** - Porting file watching to FSEvents/kqueue
+- **Foundation Integration** - Replacing portable code with Darwin-native APIs
+- **SwiftUI Bridge** - Implementing dual-layer communication system
+- **Memory Management** - Darwin-specific allocators and optimization
+- **Godot ARM64** - Optimizing engine for Darwin ARM64 performance
 
 ### 🎮 **Game Engine Integration**
-- **Godot Core** - Full Godot engine integration with custom enhancements
-- **GDExtension Support** - Method binding, property exposure, signal handling
-- **Dynamic Libraries** - Hot-swappable modules with safe unloading
-- **Performance Optimization** - ARM64-specific optimizations and memory management
+- **Godot Darwin ARM64** - Engine optimized specifically for Apple Silicon
+- **GDExtension Darwin** - Native Darwin integration for method binding
+- **Metal Rendering** - Darwin GPU acceleration for game graphics
+- **Core Audio Integration** - Native Darwin audio for game sound
+- **Foundation APIs** - Darwin-native system integration
 
-### 📱 **Platform-Specific Features**
-- **macOS ARM64** - Primary development target with native API integration
-- **Cross-Platform** - Windows x64 and Linux x64 compatibility
-- **Native UI Integration** - SwiftUI integration for iOS/macOS experiences
-- **Build Automation** - Jenova Builder with Python virtual environment support
+### 📱 **Darwin-Specific Features**
+- **macOS ARM64 ONLY** - Exclusive focus on Apple Silicon
+- **SwiftUI Integration** - Native Darwin UI framework
+- **Foundation APIs** - Core Darwin system integration
+- **Metal Performance** - Darwin GPU optimization
+- **Core Audio** - Native Darwin audio processing
+- **Xcode Workflow** - Native Darwin development environment
 
-## Current Implementation Status
+## Current Porting Status
 
-### ✅ **Phase 0: Foundation - COMPLETE**
-- [x] Basic runtime building infrastructure
-- [x] NitroJIT ARM64 emitter (x64 assembly output)
-- [x] Meteora component integration
-- [x] Build system with Jenova Builder
-- [x] Cross-platform dependency management
-- [x] Core architecture design
+### 📋 **Phase 0: Source Analysis - COMPLETE**
+- [x] Identified 50+ C++ source files to be ported
+- [x] Analyzed existing cross-platform architecture
+- [x] Evaluated dependencies for Darwin compatibility
+- [x] Established Darwin ARM64 build environment
+- [x] Created porting strategy and priorities
 
-### 🚧 **Phase 1: Core Infrastructure - IN PROGRESS**
-- [ ] **Abstraction OS Layer**: Platform detection and native API wrapping
-- [ ] **Metadata Parser**: C++ code analysis and reflection data generation
-- [ ] **Asset Monitor**: File watching system with hot-reload functionality
-- [ ] **Platform Integration**: macOS ARM64 optimization and native API integration
+### 🚧 **Phase 1: Darwin Native Porting - IN PROGRESS (20%)**
+- [ ] **NitroJIT ARM64 Backend**: Port x86 JIT to native ARM64 Darwin
+- [ ] **Foundation API Integration**: Replace portable abstractions with Darwin APIs
+- [ ] **SwiftUI Bridge Layer**: Implement dual-layer communication
+- [ ] **FSEvents File Monitoring**: Port asset monitoring to Darwin-native APIs
+- [ ] **Metal Integration**: Implement Darwin GPU acceleration
+- [ ] **Core Audio Integration**: Native Darwin audio processing
 
-### 📋 **Phase 2: Compilation Pipeline - PLANNED**
-- [ ] **Compiler Interface**: Clang/GCC/MSVC integration with build pipeline
-- [ ] **Module Wrapper**: GDExtension interface and Godot integration
-- [ ] **Dynamic Compilation**: Source to object file with optimization settings
-- [ ] **Symbol Management**: Export management and type registration
+### 📋 **Phase 2: Darwin Optimization - PLANNED**
+- [ ] **Memory Management**: Darwin-specific allocators and optimization
+- [ ] **Godot ARM64 Darwin**: Engine optimization for Apple Silicon
+- [ ] **Xcode Integration**: Native development workflow
+- [ ] **Instruments Profiling**: Darwin performance analysis tools
+- [ ] **Build System Darwin**: Optimize for Darwin-only compilation
 
-### 🔮 **Phase 3: Runtime & Development - PLANNED**
-- [ ] **Interpreter Engine**: AST walking with runtime execution
-- [ ] **Module Loader**: Dynamic library management with hot-reload
-- [ ] **Development Tools**: Debugging support and error handling
-- [ ] **Performance Optimization**: ARM64-specific optimizations
+### 🔮 **Phase 3: Production Darwin - PLANNED**
+- [ ] **App Store Compatibility**: Darwin distribution optimization
+- [ ] **Notarization Support**: Apple security requirements
+- [ ] **Sandboxing**: Darwin security model integration
+- [ ] **Performance Validation**: Darwin-specific benchmarking
+- [ ] **Release Pipeline**: Darwin deployment automation
 
 ## Installation & Setup
 
-### Prerequisites
-- **Xcode Command Line Tools** or **Full Xcode**
-- **Python 3.10+** for Jenova Builder
-- **CMake 3.20+** for build system
-- **Ninja 1.11+** for fast compilation
-- **Homebrew** for dependency management
+### Prerequisites (Darwin ARM64 ONLY)
+- **macOS 12.0+** with Apple Silicon (M1/M2/M3/M4)
+- **Xcode 14.0+** or Command Line Tools
+- **Python 3.10+** for Jenova Builder ARM64
+- **Homebrew** for Darwin dependency management
 
-### Quick Start
+### Quick Start (Darwin ARM64)
 ```bash
-# Clone the repository
+# Clone the repository (Darwin ARM64 only)
 git clone https://github.com/[USERNAME]/jenova-runtime.git
 cd jenova-runtime
 
-# Create Python virtual environment
+# Create Darwin Python environment
 python3 -m venv jenova_build_env
 source jenova_build_env/bin/activate
-pip install requests py7zr colored
+pip install requests py7zr colored psutil
 
-# Build for macOS ARM64
+# Build for Darwin ARM64 ONLY
 python3 Jenova.Builder_ARM64.py
 ```
 
-**Supported Compilers**:
-- **Clang++ 18+** (Recommended for macOS)
-- **GCC 13+** (Linux/Windows)
-- **MSVC** (Windows only)
+**Supported Compiler (Darwin ONLY)**:
+- **Clang++ 18+** (Darwin ARM64 exclusive)
+
+⚠️ **NO SUPPORT**: Linux, Windows, or Intel Macs are not supported and will not be ported.
 
 ## Usage
 
-### 🎯 **Getting Started**
-1. **Set up development environment** - Install prerequisites via Homebrew
-2. **Create virtual environment** - Use Python venv for isolated dependencies
-3. **Run Jenova Builder** - Execute the ARM64 build script for your platform
+### 🎯 **Darwin ARM64 Development**
+1. **Darwin Setup** - Install Xcode and Homebrew on Apple Silicon Mac
+2. **ARM64 Environment** - Use Python venv for Darwin-specific dependencies
+3. **Darwin Build** - Execute ARM64-only build script
+4. **SwiftUI Integration** - Develop with native Darwin UI framework
 
-### ⌨️ **Build Commands**
-- **Full Build**: `python3 Jenova.Builder_ARM64.py`
-- **Clean Build**: Add `--clean` flag to builder script
-- **Debug Build**: Use `--debug` configuration
-- **Development Mode**: Enable hot-reload with `--dev` flag
+### ⌨️ **Darwin Build Commands**
+- **Darwin Build**: `python3 Jenova.Builder_ARM64.py` (macOS ARM64 only)
+- **Clean Build**: Darwin-specific cache clearing
+- **Debug Build**: Darwin development configuration
+- **Release Build**: Darwin App Store optimization
 
-### 🖥️ **Platform-Specific Features**
-- **macOS ARM64**: Native performance with Metal rendering support
-- **Cross-Platform**: Unified codebase with platform-specific optimizations
-- **Development**: Hot-reload workflow with live script updates
+### 🖥️ **Darwin-Specific Features**
+- **Apple Silicon**: Native ARM64 performance optimization
+- **Metal Rendering**: Darwin GPU acceleration
+- **Core Audio**: Native Darwin audio processing
+- **SwiftUI**: Native Darwin UI framework
+- **Foundation**: Darwin system API integration
 
-### 💾 **Runtime Architecture**
-- **Dual-Layer Design**: SwiftUI native + Godot core separation
-- **Bridge Communication**: Efficient data exchange between layers
-- **Module System**: Dynamic loading with GDExtension compatibility
-- **Asset Pipeline**: Live reloading with change detection
+### 💾 **Darwin Runtime Architecture**
+- **SwiftUI Native**: Darwin UI layer with Foundation APIs
+- **Bridge System**: Darwin-native communication layer
+- **Godot ARM64**: Game engine optimized for Apple Silicon
+- **Darwin APIs**: Foundation, Metal, Core Audio integration
 
 ## Technical Architecture
 
-### Hybrid Runtime Stack
-- **SwiftUI Layer** - Native platform UI and system integration
-- **Bridge System** - Communication layer between native and game code
-- **Godot Core** - Game engine with custom Jenova enhancements
-- **JIT Compilation** - NitroJIT ARM64 emitter for runtime optimization
-- **Module System** - Dynamic loading with hot-reload capabilities
+### Darwin ARM64 Runtime Stack
+- **SwiftUI Layer** - Native Darwin UI with Foundation framework
+- **Foundation Bridge** - Darwin-native communication system
+- **Godot Darwin** - Game engine with ARM64 Apple Silicon optimization
+- **NitroJIT ARM64** - Native Darwin ARM64 code generation
+- **Darwin APIs** - Metal, Core Audio, FSEvents integration
 
-### Key Components
+### Darwin Components
 ```
-JenovaRuntime/
-├── Core/
-│   ├── NitroJIT/          # ARM64 JIT compilation system
-│   ├── Meteora/           # Core component system
-│   ├── AssetMonitor/      # File watching and hot-reload
-│   └── ModuleSystem/      # Dynamic library management
-├── Bridge/
-│   ├── SwiftUIBridge/     # Native UI integration
-│   ├── GodotBridge/       # Game engine interface
-│   └── Communication/     # Inter-layer messaging
-├── Runtime/
-│   ├── Interpreter/       # C++ script execution
-│   ├── Compiler/          # Dynamic compilation interface
-│   └── Loader/            # Module loading system
-└── Platform/
-    ├── Darwin/            # macOS ARM64 optimizations
-    ├── Linux/             # Linux x64 support
-    └── Windows/           # Windows x64 support
+JenovaRuntime/ (Darwin ARM64 EXCLUSIVE)
+├── Source/ (50+ files to be ported)
+│   ├── jenova.cpp (365KB)         # Core runtime → Darwin ARM64
+│   ├── script_compiler.cpp        # Compilation → Darwin native
+│   ├── script_interpreter.cpp     # Interpreter → ARM64 optimization
+│   ├── package_manager.cpp        # Package system → Foundation APIs
+│   ├── asset_monitor.cpp          # File watching → FSEvents/kqueue
+│   └── [45+ more files]           # Full porting scope
+├── Dependencies/ (Darwin compatibility)
+│   ├── libasmjit/                 # JIT → ARM64 Darwin backend
+│   ├── libgodot/                  # Engine → ARM64 optimization
+│   └── [9 more libraries]         # Darwin compatibility validation
+├── Darwin Integration/
+│   ├── SwiftUI Bridge/            # Native UI integration
+│   ├── Foundation APIs/           # Darwin system integration
+│   ├── Metal Graphics/            # Darwin GPU acceleration
+│   └── Core Audio/                # Darwin audio processing
+└── Build System/
+    ├── Jenova.Builder_ARM64.py    # Darwin-only build system
+    ├── jenova_build_env/          # Darwin Python environment
+    └── Darwin Dependencies/       # Apple Silicon optimization
 ```
 
-### Design Patterns
-- **Dual-Layer Architecture** - Native UI with game engine separation
-- **Component System** - Modular runtime with hot-swappable components
-- **Cross-Platform Abstraction** - Unified API with platform optimizations
-- **JIT Compilation** - Runtime optimization for performance-critical code
+### Darwin Design Patterns
+- **Foundation Framework** - Native Darwin APIs over portable abstractions
+- **SwiftUI Integration** - Darwin UI framework for dual-layer architecture
+- **Metal Graphics** - Darwin GPU acceleration over OpenGL/Vulkan
+- **Core Audio** - Darwin audio processing over portable audio libraries
+- **ARM64 Optimization** - Apple Silicon-specific performance tuning
 
 ## Development Roadmap
 
-### 🔜 **Next Up (Phase 1)**
-1. **Abstraction OS Layer**: Complete platform detection and native API wrapping
-2. **Metadata Parser**: Implement C++ code analysis and reflection generation
-3. **Asset Monitor**: File watching system with intelligent change detection
-4. **Hot-Reload Pipeline**: Live script updates with state preservation
-5. **Performance**: ARM64-specific optimizations and memory management
+### 🔜 **Phase 1: Darwin Native Porting (Current)**
+1. **NitroJIT ARM64**: Port x86 JIT backend to native ARM64 Darwin
+2. **Foundation Integration**: Replace cross-platform code with Darwin APIs
+3. **SwiftUI Bridge**: Implement dual-layer Darwin architecture
+4. **FSEvents Monitoring**: Port file watching to Darwin-native APIs
+5. **Metal Integration**: Implement Darwin GPU acceleration
 
-### 🎯 **Medium Term (Phase 2)**
-1. **Compiler Integration**: Clang/GCC/MSVC with dynamic compilation
-2. **Module Wrapper**: Complete GDExtension interface implementation
-3. **Build Pipeline**: Automated compilation with optimization settings
-4. **Development Tools**: Debugging support and error handling systems
-5. **Cross-Platform**: Windows and Linux platform completion
+### 🎯 **Phase 2: Darwin Optimization**
+1. **Memory Management**: Darwin-specific allocators and optimization
+2. **Godot ARM64**: Engine optimization for Apple Silicon
+3. **Core Audio**: Native Darwin audio processing
+4. **Xcode Integration**: Darwin development workflow
+5. **Instruments Profiling**: Darwin performance analysis
 
-### 🚀 **Long Term (Phase 3+)**
-1. **Advanced JIT**: Complete ARM64 native code generation
-2. **Editor Integration**: Visual development tools and debugging interface
-3. **Performance Profiling**: Runtime analysis and optimization tools
-4. **Community Ecosystem**: Plugin architecture and third-party extensions
-5. **Commercial Features**: Enterprise deployment and support tools
+### 🚀 **Phase 3: Darwin Production**
+1. **App Store Ready**: Darwin distribution optimization
+2. **Notarization**: Apple security requirements
+3. **Sandboxing**: Darwin security model
+4. **Performance Validation**: Darwin benchmarking
+5. **Release Pipeline**: Darwin deployment automation
 
 ## 🤖 Claude.ai Integration
 
-> **For AI Collaboration**: This project uses Claude.ai assistance for architecture decisions, platform porting challenges, and C++ optimization strategies. The `.claude/` directory contains detailed context files for AI collaboration continuity.
+> **For AI Collaboration**: This project uses Claude.ai assistance for Darwin ARM64 porting challenges, Foundation API integration, and SwiftUI architecture decisions.
 
-**Quick Context**: Cross-platform runtime porting effort combining SwiftUI native experiences with Godot engine performance, featuring dual-layer architecture and ARM64 optimization focus.
+**Darwin Porting Context**: Exclusive Darwin ARM64 runtime porting effort combining SwiftUI native experiences with Godot engine performance, featuring Foundation framework integration and Apple Silicon optimization.
 
 **Key AI Collaboration Areas**:
-- 🏗️ **Architecture**: Dual-layer design patterns, bridge communication systems
-- 🔧 **Porting**: Darwin ARM64 optimization, cross-platform compatibility
-- ⚡ **Performance**: JIT compilation, memory management, runtime optimization
-- 📋 **Planning**: Component implementation priorities, technical debt tracking
+- 🍎 **Darwin Porting**: ARM64 optimization, Foundation API integration
+- 🏗️ **SwiftUI Architecture**: Dual-layer design, native Darwin UI
+- ⚡ **Apple Silicon**: ARM64 JIT compilation, Metal graphics, Core Audio
+- 🔧 **Foundation APIs**: Replacing portable code with Darwin-native calls
 
-**AI Context Files**: See `.claude/context.md` for detailed project state, architecture decisions, and ongoing development context.
+**AI Context Files**: See `.claude/context.md` for Darwin ARM64 porting state, architecture decisions, and Foundation integration progress.
 
-## Dependencies
+## Dependencies (Darwin Compatibility)
 
-### Core Runtime Dependencies
-- **[AsmJIT](https://github.com/asmjit/asmjit)** - JIT compilation and code generation
-- **[LibArchive](https://github.com/libarchive/libarchive)** - Archive format support
-- **[LibLZMA](https://github.com/ShiftMediaProject/liblzma)** - LZMA compression
-- **[LibCurl](https://github.com/curl/curl)** - HTTP/network operations
-- **[LibFastZLib](https://github.com/gildor2/fast_zlib)** - High-performance compression
-- **[LibTinyCC](http://download.savannah.gnu.org/releases/tinycc/)** - Lightweight C compiler
-- **[LibPThread](https://github.com/GerHobbelt/pthread-win32)** - Threading support
-- **[JSON++](https://github.com/nlohmann/json)** - JSON parsing and generation
-- **[FileWatch](https://github.com/ThomasMonkman/filewatch)** - File system monitoring
-- **[ArgParse++](https://github.com/p-ranav/argparse)** - Command-line parsing
-- **[Base64++](https://github.com/zaphoyd/websocketpp/blob/master/websocketpp/base64/base64.hpp)** - Base64 encoding/decoding
+### Darwin ARM64 Runtime Dependencies
+- **[AsmJIT](https://github.com/asmjit/asmjit)** - JIT compilation → ARM64 Darwin backend
+- **[LibArchive](https://github.com/libarchive/libarchive)** - Archive support → Darwin compatibility
+- **[LibLZMA](https://github.com/ShiftMediaProject/liblzma)** - LZMA compression → ARM64 optimization
+- **[LibCurl](https://github.com/curl/curl)** - Network operations → Darwin integration
+- **[LibGodot](https://github.com/godotengine/godot-cpp)** - Engine integration → ARM64 Darwin
+- **[LibJenova](./Dependencies/libjenova/)** - Runtime utilities → Darwin APIs
+- **[LibTinyCC](http://download.savannah.gnu.org/releases/tinycc/)** - C compiler → ARM64 Darwin
+- **[LibPThread](https://github.com/GerHobbelt/pthread-win32)** - Threading → Darwin native
+- **[LibZlib](https://github.com/madler/zlib)** - Compression → Darwin optimization
+- **[LibXML2](http://xmlsoft.org/)** - XML processing → Darwin compatibility
+
+### Darwin-Specific Integration
+- **Foundation Framework** - Core Darwin APIs
+- **SwiftUI** - Native Darwin UI framework
+- **Metal** - Darwin GPU acceleration
+- **Core Audio** - Darwin audio processing
+- **FSEvents** - Darwin file system monitoring
+- **Xcode Tools** - Darwin development environment
 
 ## License
 
@@ -233,10 +255,10 @@ Jenova Runtime is released under the MIT License. See [LICENSE](LICENSE) for det
 
 ## Acknowledgments
 
+- **Apple Silicon Team** for ARM64 architecture and Metal performance
+- **Apple Foundation Team** for Darwin API framework
 - **Godot Engine Team** for the robust game engine foundation
-- **Apple Silicon Engineering** for ARM64 architecture and Metal performance
-- **Clang/LLVM Team** for advanced compilation infrastructure
 - **Darwin ARM64 Community** for porting insights and optimization techniques
-- **Hamid.Memar (MemarDesign™ LLC.)** for original development
-- **Tyler.Allen (NomadAtelers™ LLC.)** for Darwin ARM64 porting efforts
-- **Claude.ai** for architectural guidance and porting assistance
+- **Hamid.Memar (MemarDesign™ LLC.)** for original cross-platform development
+- **Tyler.Allen (NomadAtelers™ LLC.)** for Darwin ARM64 EXCLUSIVE porting effort
+- **Claude.ai** for Darwin porting guidance and Foundation API integration assistance
